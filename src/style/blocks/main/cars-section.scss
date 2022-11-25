@@ -1,0 +1,91 @@
+.cards-desktop {
+  display: none;
+
+  @include onDesktop {
+    display: block;
+    width: 1016px;
+  }
+}
+
+.slider-mobile {
+  display: block;
+
+  @include onDesktop {
+    display: none;
+  }
+}
+
+.card {
+  width: 300px;
+  height: 350px;
+
+  @include onDesktop {
+    width: 317px;
+    height: 388px;
+    padding: 24px;
+  }
+}
+
+.car-brand {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #1A202C;
+
+  @include onDesktop {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+  }
+}
+
+.card-img-top {
+  @include onDesktop {
+    margin-top: 52px;
+  }
+}
+
+.car-type {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.description-car {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+
+  @include onDesktop {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+
+.discount {
+  font-weight: 700;
+  font-size: 12px;
+  text-decoration-line: line-through;
+  color: #90A3BF;
+}
+
+.costs {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+
+  @include onDesktop {
+    font-size: 20px;
+    line-height: 25px;
+  }
+}
+
+.button-size {
+  width: 100px;
+  height: 36px;
+
+  @include onDesktop {
+    width: 116px;
+    height: 44px;
+  }
+}

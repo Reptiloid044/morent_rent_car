@@ -1,0 +1,45 @@
+.mobile {
+  display: block;
+
+  @include onDesktop {
+    display: none !important;
+  }
+
+  &__brand {
+    position: absolute;
+    top: 70px;
+    left: 30px
+  }
+
+  &__form {
+    position: relative;
+    top: 85px;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  &__input-search {
+    height: 48px;
+    padding-left: 50px;
+  }
+
+  &__filter-button {
+    width: 48px;
+    height: 48px;
+    border: 1px solid rgba(195, 212, 233, 0.4);
+    border-radius: 10px;
+  }
+
+  &__account {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+  }
+}
+
+.mobileSearch-image {
+  position: absolute;
+  display: block;
+  left: 25px;
+  top: 13px;
+}

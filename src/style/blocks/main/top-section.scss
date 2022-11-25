@@ -1,0 +1,200 @@
+.main-container {
+  padding: 23px;
+
+  @include onDesktop {
+    padding: 32px;
+    width: 100%;
+  }
+}
+
+.top-section {
+  
+  @include onDesktop {
+    width: 1016px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__image-container {
+    width: 327px;
+
+    @include onDesktop {
+      width: 492px;
+    }
+  }
+
+  &__image-containerS {
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    margin-top: 24px;
+    
+  }
+
+  &__info {
+    width: 327px;
+    background: #FFFFFF;
+    border-radius: 10px;
+    padding: 16px;
+    margin-top: 36px;
+
+    @include onDesktop {
+      width: 492px;
+      height: 508px;
+      margin-top: 0px;
+    }
+  }
+
+  &__info-title {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__info-rating {
+    margin-top: 10px;
+  }
+
+  &__info-text {
+    margin-top: 20px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 200%;
+
+    @include onDesktop {
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 200%;
+    }
+  }
+
+  &__info-description {
+    margin-top: 26px;
+  }
+
+  &__info-price {
+    margin-top: 36px;
+
+    @include onDesktop {
+      margin-top: 68px;
+    }
+  }
+
+  &__info-cost {
+    width: 120px;
+    margin-top: 0.5em;
+
+    @include onDesktop {
+      width: 200px;
+    }
+  }
+}
+
+.big-image {
+  width: 100%;
+}
+
+.small-image {
+  display: flex;
+  width: 96px;
+  height: 64px;
+
+  @include onDesktop {
+    width: 148px;
+    height: 124px;
+  }
+}
+
+.car-title {
+  font-size: 20px;
+
+  @include onDesktop {
+    font-weight: 700;
+    font-size: 32px;
+  }
+}
+
+.like {
+  display: none;
+
+  @include onDesktop {
+    display: block;
+  }
+}
+
+.reviewers {
+  font-weight: 500;
+  font-size: 12px;
+  margin-left: 5px;
+
+  @include onDesktop {
+    font-size: 14px;
+  }
+}
+
+.description_title {
+  font-weight: 500;
+  font-size: 12px;
+  color: #90A3BF;
+
+  @include onDesktop {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    letter-spacing: -0.02em;
+    color: #90A3BF;
+  }
+}
+
+.description_type {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 15px;
+
+  @include onDesktop {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 25px;
+    letter-spacing: -0.02em;
+    color: #3D5278;
+  }
+}
+
+.days {
+  font-weight: 700;
+  font-size: 12px;
+  color: #90A3BF;
+
+  @include onDesktop {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #90A3BF;
+  }
+}
+
+.costs { 
+  font-weight: 700;
+  font-size: 20px;
+  color: black;
+
+  @include onDesktop {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 35px;
+    display: flex;
+    align-items: center;
+    color: #1A202C;
+  }
+}
+
+.discount {
+  font-weight: 700;
+  font-size: 12px;
+  text-decoration-line: line-through;
+  color: #90A3BF;
+}
+
+.button-size {
+  width: 140px;
+  height: 56px;
+}

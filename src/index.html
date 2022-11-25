@@ -1,13 +1,1055 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Title</title>
-    <link rel="stylesheet" href="./styles/main.scss">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Car Rent</title>
+    <link rel="icon" href="./image/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    >
+    <link rel="stylesheet" href="./style/main.scss">
   </head>
-  <body>
-    <h1>Hello Mate Academy</h1>
-    <script type="text/javascript" src="scripts/main.js"></script>
+  <body class="page__body">
+    <header class="header">
+      <!-- header-desktop -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-white p-4 navbar-menu desktop">
+        <div class="container-fluid">
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <a class="navbar-brand" href="#">
+              <img
+                src="./image/logo.svg"
+                alt="Bootstrap"
+                width="148"
+                height="44"
+              >
+            </a>
+
+            <div class="container-fluid navbar-menu__form">
+              <form class="d-flex form">
+                <div class="search-image">
+                  <img
+                    src="./image/search.svg"
+                    alt="Search"
+                    width="19"
+                    height="19"
+                  >
+                </div>
+                <input
+                  class="form-control me-3 navbar-menu__input-search"
+                  type="search"
+                  placeholder="Search something here"
+                  aria-label="Search"
+                >
+                <button class="btn tune filter-button" type="submit">
+                  <img
+                    class="filter-image"
+                    src="./image/filter.svg"
+                    alt="Filter"
+                    width="24" height="24"
+                  >
+                </button>
+              </form>
+            </div>
+
+            <ul class="navbar-nav">
+              <li class="nav-item navbar-menu__icon">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="#"
+                >
+                  <img src="./image/heart-fill.svg" alt="favorite">
+                </a>
+              </li>
+              <li class="nav-item navbar-menu__icon bell">
+                <a class="nav-link" href="#">
+                  <img src="./image/bell-fill.svg" alt="bell">
+                </a>
+              </li>
+              <li class="nav-item navbar-menu__icon">
+                <a class="nav-link" href="#">
+                  <img src="./image/gear-fill.svg" alt="gear">
+                </a>
+              </li>
+            </ul>
+
+            <div class="navbar-menu__account">
+              <a href="nav-link">
+                <img
+                  src="./image/account.svg"
+                  alt="account"
+                  width="44"
+                  height="44"
+                >
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <!-- header-mobile -->
+      <nav class="visible-xs navbar navbar-expand-lg navbar-light bg-white d-flex flex-column align-items-start mobile">
+        <div class="container-fluid">
+          <button
+            class="navbar-toggler border-0"
+            type="button"
+            data-toggle="collapse"
+            data-bs-target="#navbarTogglerDemo01"
+            aria-controls="navbarTogglerDemo01"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <a class="mobile__brand" href="#">
+            <img
+              src="./image/logo.svg"
+              alt="Bootstrap"
+              width="148"
+              height="44"
+            >
+          </a>
+
+          <div class="container-fluid">
+            <form class="d-flex mobile__form">
+              <div class="mobileSearch-image">
+                <a href="#">
+                  <img
+                    src="./image/search.svg"
+                    alt="Search"
+                    width="24"
+                    height="24"
+                  >
+                </a>
+              </div>
+              <input
+                class="form-control mx-2 mobile__input-search"
+                type="search"
+                placeholder="Search something here"
+                aria-label="Search"
+              >
+              <button class="btn tune mobile__filter-button" type="submit">
+                <img
+                  class="filter-image"
+                  src="./image/filter.svg"
+                  alt="Filter"
+                  width="24" height="24"
+                >
+              </button>
+            </form>
+
+            <div class="mobile__account">
+              <img
+                src="./image/account.svg"
+                alt="account"
+                width="28"
+                height="28"
+              >
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+
+    <main class="main d-flex bg-white">
+      <sidebar class="sidebar bg-white pt-5">
+        <nav class="d-flex flex-column align-item-start">
+          <div class="display-7 sidebar__title">Type</div>
+          <div class="form-check mt-2">
+            <input
+              class="form-check-input checkbox"
+              type="checkbox"
+              value=""
+              id="flexCheckDefault"
+            >
+            <label class="form-check-label" for="flexCheckDefault">
+                Sport
+            </label>
+            <span>(10)</span>
+          </div>
+          <div class="form-check mt-2">
+            <input
+              class="form-check-input checkbox"
+              type="checkbox"
+              value=""
+              id="flexCheckDefault"
+            >
+            <label class="form-check-label" for="flexCheckDefault">
+                SUV
+            </label>
+            <span>(12)</span>
+          </div>
+          <div class="form-check mt-2">
+            <input
+              class="form-check-input checkbox"
+              type="checkbox"
+              value=""
+              id="flexCheckDefault"
+            >
+            <label class="form-check-label" for="flexCheckDefault">
+                MPV
+            </label>
+            <span>(16)</span>
+          </div>
+          <div class="form-check mt-2">
+            <input
+              class="form-check-input checkbox"
+              type="checkbox"
+              value=""
+              id="flexCheckDefault"
+            >
+            <label class="form-check-label" for="flexCheckDefault">
+                Sedan
+            </label>
+            <span>(20)</span>
+          </div>
+          <div class="form-check mt-2">
+            <input
+              class="form-check-input checkbox"
+              type="checkbox"
+              value=""
+              id="flexCheckDefault"
+            >
+            <label class="form-check-label" for="flexCheckDefault">
+                Coupe
+            </label>
+            <span>(14)</span>
+          </div>
+          <div class="form-check mt-2">
+            <input
+              class="form-check-input checkbox"
+              type="checkbox"
+              value=""
+              id="flexCheckDefault"
+            >
+            <label class="form-check-label" for="flexCheckDefault">
+                Hatchback
+            </label>
+            <span>(14)</span>
+          </div>
+
+          <div class="display-7 mt-5 sidebar__title">Capacity</div>
+          <div class="form-check mt-2">
+            <input
+              class="form-check-input checkbox"
+              type="checkbox"
+              value=""
+              id="flexCheckDefault"
+            >
+            <label class="form-check-label" for="flexCheckDefault">
+                2 Person
+            </label>
+            <span>(10)</span>
+          </div>
+          <div class="form-check mt-2">
+            <input
+              class="form-check-input checkbox"
+              type="checkbox"
+              value=""
+              id="flexCheckDefault"
+            >
+            <label class="form-check-label" for="flexCheckDefault">
+                4 Person
+            </label>
+            <span>(14)</span>
+          </div>
+          <div class="form-check mt-2">
+            <input
+              class="form-check-input checkbox"
+              type="checkbox"
+              value=""
+              id="flexCheckDefault"
+            >
+            <label class="form-check-label" for="flexCheckDefault">
+                6 Person
+            </label>
+            <span>(16)</span>
+          </div>
+          <div class="form-check mt-2">
+            <input
+              class="form-check-input checkbox"
+              type="checkbox"
+              value=""
+              id="flexCheckDefault"
+            >
+            <label class="form-check-label" for="flexCheckDefault">
+                8 or More
+            </label>
+            <span>(16)</span>
+          </div>
+          </div>
+
+          <div class="display-7 mt-5 sidebar__title">Price</div>
+          <div class="progress sidebar__progress">
+            <div
+              class="progress-bar w-50"
+              role="progressbar"
+              aria-label="Basic example"
+              aria-valuenow="75"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            >
+            </div>
+          </div>
+          <p class="text-max">Max. $100.00</p>
+        </nav>
+      </sidebar>
+
+      <div class="main-container bg-light">
+        <section class="top-section">
+          <div class="top-section__image">
+            <div class="top-section__image-container">
+              <img
+                class="big-image"
+                src="./image/bigPictureTop.svg"
+                alt="Car">
+            </div>
+
+            <div class="top-section__image-containerS">
+              <img
+                class="small-image"
+                src="./image/smallPic1.svg"
+                alt="Car"
+              >
+              <img
+                class="small-image"
+                src="./image/smallPic2.svg"
+                alt="Car"
+              >
+              <img
+                class="small-image"
+                src="./image/smallPic3.svg"
+                alt="Car"
+              >
+            </div>
+          </div>
+          <div class="top-section__info">
+            <div class="top-section__info-title d-flex justify-content-between">
+              <h1 class="bold car-title">Nissan GT - R</h1>
+              <img
+                class="like my-auto"
+                src="./image/like.svg"
+                alt="like"
+                height="18"
+                width="20"
+              >
+            </div>
+
+            <div class="top-section__info-rating">
+              <img src="./image/ratingStar.svg" alt="start">
+              <img src="./image/ratingStar.svg" alt="start">
+              <img src="./image/ratingStar.svg" alt="start">
+              <img src="./image/ratingStar.svg" alt="start">
+              <img src="./image/ratingStarEmpty.svg" alt="start">
+              <span class="reviewers">440+ Reviewer</span>
+            </div>
+
+            <div class="top-section__info-text">
+              NISMO has become the embodiment of Nissan's outstanding performance, inspired by the most unforgiving proving ground, the "race track".
+            </div>
+
+            <div class="top-section__info-description d-flex justify-content-between">
+              <div class="description_title">Type Car</div>
+              <div class="description_type">Sport</div>
+              <div class="description_title">Steering</div>
+              <div class="description_type">Manual</div>
+            </div>
+
+            <div class="top-section__info-description d-flex justify-content-between">
+              <div class="description_title">Capacity</div>
+              <div class="description_type">2 Person</div>
+              <div class="description_title">Gasoline</div>
+              <div class="description_type">70L</div>
+            </div>
+
+            <div class="top-section__info-price d-flex justify-content-between">
+              <div class="top-section__info-cost">
+                <h1 class="costs">$80.00/
+                  <span class="pt-2 days">days</span>
+                </h1>
+                <p class="discount">$100.00</p>
+              </div>
+
+              <button type="button" class="btn btn-primary button-size">Rent Now</button>
+            </div>
+          </div>
+        </section>
+        <section class="reviews-section">
+          <div class="reviews-section__title">
+            <h2 class="reviews-section__text">Reviews
+              <span class="badge bg-primary text-white">13</span>
+            </h2>
+
+            <div class="reviews-section__accountInfo d-flex justify-content-between">
+              <img
+                class="icon"
+                src="./image/Profile1.svg"
+                alt="Profile1"
+              >
+              <div class="accountInfo-text row">
+                <h1 class="accountInfo-name">Alex Staton</h1>
+                <span class="accountInfo-position">CEO at Bukalapak</span>
+              </div>
+              <div class="accountInfo-dateAndRating">
+                <h1 class="accountInfo-date">21 July 2022</h1>
+                <div class="accountInfo-date__info-rating">
+                  <img
+                    class="star"
+                    src="./image/ratingStar.svg"
+                    alt="start"
+                  >
+                  <img
+                    class="star"
+                    src="./image/ratingStar.svg"
+                    alt="start"
+                 >
+                  <img
+                    class="star"
+                    src="./image/ratingStar.svg"
+                    alt="start"
+                  >
+                  <img
+                    class="star"
+                    src="./image/ratingStar.svg"
+                    alt="start"
+                  >
+                  <img
+                    class="star"
+                    src="./image/ratingStarEmpty.svg"
+                    alt="start"
+                  >
+                </div>
+              </div>
+            </div>
+            <p class="accountInfo-mainText">We are very happy with the service from the MORENT App. Morent has a low price and also a large variety of cars with good and comfortable facilities. In addition, the service provided by the officers is also very friendly and very polite.</p>
+
+            <div class="reviews-section__accountInfo d-flex justify-content-between">
+              <img
+                class="icon"
+                src="./image/Profile2.svg"
+                alt="Profile1"
+              >
+              <div class="accountInfo-text row">
+                <h1 class="accountInfo-name">Skylar Dias</h1>
+                <span class="accountInfo-position">CEO at Amazon</span>
+              </div>
+              <div class="accountInfo-dateAndRating ">
+                <h1 class="accountInfo-date">20July 2022</h1>
+                <div class="accountInfo-date__info-rating">
+                  <img
+                    class="star"
+                    src="./image/ratingStar.svg"
+                    alt="start"
+                  >
+                  <img
+                    class="star"
+                    src="./image/ratingStar.svg"
+                    alt="start"
+                 >
+                  <img
+                    class="star"
+                    src="./image/ratingStar.svg"
+                    alt="start"
+                  >
+                  <img
+                    class="star"
+                    src="./image/ratingStar.svg"
+                    alt="start"
+                  >
+                  <img
+                    class="star"
+                    src="./image/ratingStarEmpty.svg"
+                    alt="start"
+                  >
+                </div>
+              </div>
+            </div>
+            <p class="accountInfo-mainText">We are greatly helped by the services of the MORENT Application. Morent has low prices and also a wide variety of cars with good and comfortable facilities. In addition, the service provided by the officers is also very friendly and very polite.</p>
+          </div>
+          <div class="text-center mt-2">
+            <button
+              class="btn d-inline-block text-center text-secondary"
+              type="button"
+              data-toggle="collapse"
+              data-target="#collapseExample"
+              aria-expanded="false"
+              aria-controls="collapseExample"
+            >
+              Show all
+              <img src="./image/showAll.svg" alt="show All">
+            </button>
+          </div>
+        </section>
+        <section class="cars-section">
+          <!-- cards-desktop -->
+          <div class="cards-desktop">
+            <div class="d-flex justify-content-between mt-4">
+              <p class="text-secondary fw-bold">Recent Car</p>
+              <button type="button" class="btn btn-light text-primary fw-bold">View All</button>
+            </div>
+
+            <div class="d-flex justify-content-between mt-3">
+              <div class="card border-0">
+                <div class="d-flex justify-content-between">
+                  <p class="car-brand">Koenigsegg</p>
+                  <img src="./image/like.svg" alt="like">
+                </div>
+                <p class="car-type mt-2 text-secondary">Sport</p>
+                <img
+                  class="card-img-top"
+                  src="./image/Koenigsegg.svg"
+                  alt="Card image cap"
+                >
+                <div class="card-body d-flex justify-content-between mt-3">
+                  <div class="description-car">
+                    <img src="./image/Gas.svg" alt="Gasoline">
+                    90L
+                  </div>
+                  <div class="description-car">
+                    <img src="./image/typeCar.svg" alt="typeCar">
+                    Manual
+                  </div>
+                  <div class="description-car">
+                    <img src="./image/people.svg" alt="people">
+                    2 People
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between mb-2">
+                  <div>
+                    <h1 class="costs">$99.00/
+                      <span class="pt-2 days">days</span>
+                    </h1>
+                  </div>
+                  <button type="button" class="btn btn-primary button-size">Rent Now</button>
+                </div>
+              </div>
+
+              <div class="card border-0">
+                <div class="d-flex justify-content-between">
+                  <p class="car-brand">Nissan GT - R</p>
+                  <img src="./image/emptyLike.svg" alt="like">
+                </div>
+                <p class="car-type mt-2 text-secondary">Sport</p>
+                <img
+                  class="card-img-top"
+                  src="./image/Nissan GTR.svg"
+                  alt="Card image cap"
+                >
+                <div class="card-body d-flex justify-content-between mt-3">
+                  <div class="description-car">
+                    <img src="./image/Gas.svg" alt="Gasoline">
+                    80L
+                  </div>
+                  <div class="description-car">
+                    <img src="./image/typeCar.svg" alt="typeCar">
+                    Manual
+                  </div>
+                  <div class="description-car">
+                    <img src="./image/people.svg" alt="people">
+                    2 People
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between mb-2">
+                  <div>
+                    <h1 class="costs">$80.00/
+                      <span class="pt-2 days">days</span>
+                    </h1>
+                    <p class="discount">$100.00</p>
+                  </div>
+                  <button type="button" class="btn btn-primary button-size">Rent Now</button>
+                </div>
+              </div>
+
+              <div class="card border-0">
+                <div class="d-flex justify-content-between">
+                  <p class="car-brand">Rolls-Royce</p>
+                  <img src="./image/like.svg" alt="like">
+                </div>
+                <p class="car-type mt-2 text-secondary">Sport</p>
+                <img
+                  class="card-img-top"
+                  src="./image/Rolls-Royce.svg"
+                  alt="Card image cap"
+                >
+                <div class="card-body d-flex justify-content-between mt-3">
+                  <div class="description-car">
+                    <img src="./image/Gas.svg" alt="Gasoline">
+                    70L
+                  </div>
+                  <div class="description-car">
+                    <img src="./image/typeCar.svg" alt="typeCar">
+                    Manual
+                  </div>
+                  <div class="description-car">
+                    <img src="./image/people.svg" alt="people">
+                    4 People
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between mb-2">
+                  <div>
+                    <h1 class="costs">$96.00/
+                      <span class="pt-2 days">days</span>
+                    </h1>
+                  </div>
+                  <button type="button" class="btn btn-primary button-size">Rent Now</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="d-flex justify-content-between mt-4">
+              <p class="text-secondary fw-bold">Recomendation Car</p>
+              <button type="button" class="btn btn-light text-primary fw-bold">View All</button>
+            </div>
+
+            <div class="d-flex justify-content-between mt-3">
+              <div class="card border-0">
+                <div class="d-flex justify-content-between">
+                  <p class="car-brand">All New Rush</p>
+                  <img src="./image/like.svg" alt="like">
+                </div>
+                <p class="car-type mt-2 text-secondary">SUV</p>
+                <img
+                  class="card-img-top"
+                  src="./image/All New Rush.svg"
+                  alt="Card image cap"
+                >
+                <div class="card-body d-flex justify-content-between mt-3">
+                  <div class="description-car">
+                    <img src="./image/Gas.svg" alt="Gasoline">
+                    70L
+                  </div>
+                  <div class="description-car">
+                    <img src="./image/typeCar.svg" alt="typeCar">
+                    Manual
+                  </div>
+                  <div class="description-car">
+                    <img src="./image/people.svg" alt="people">
+                    6 People
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between mb-2">
+                  <div>
+                    <h1 class="costs">$72.00/
+                      <span class="pt-2 days">days</span>
+                    </h1>
+                    <p class="discount">$80.00</p>
+                  </div>
+                  <button type="button" class="btn btn-primary button-size">Rent Now</button>
+                </div>
+              </div>
+
+              <div class="card border-0">
+                <div class="d-flex justify-content-between">
+                  <p class="car-brand">CR - V</p>
+                  <img src="./image/emptyLike.svg" alt="like">
+                </div>
+                <p class="car-type mt-2 text-secondary">SUV</p>
+                <img
+                  class="card-img-top"
+                  src="./image/CR - V.svg"
+                  alt="Card image cap"
+                >
+                <div class="card-body d-flex justify-content-between mt-3">
+                  <div class="description-car">
+                    <img src="./image/Gas.svg" alt="Gasoline">
+                    70L
+                  </div>
+                  <div class="description-car">
+                    <img src="./image/typeCar.svg" alt="typeCar">
+                    Manual
+                  </div>
+                  <div class="description-car">
+                    <img src="./image/people.svg" alt="people">
+                    6 People
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between mb-2">
+                  <div>
+                    <h1 class="costs">$80.00/
+                      <span class="pt-2 days">days</span>
+                    </h1>
+                  </div>
+                  <button type="button" class="btn btn-primary button-size">Rent Now</button>
+                </div>
+              </div>
+
+              <div class="card border-0">
+                <div class="d-flex justify-content-between">
+                  <p class="car-brand">All New Terios</p>
+                  <img src="./image/emptyLike.svg" alt="like">
+                </div>
+                <p class="car-type mt-2 text-secondary">SUV</p>
+                <img
+                  class="card-img-top"
+                  src="./image/All New Terios.svg"
+                  alt="Card image cap"
+                >
+                <div class="card-body d-flex justify-content-between mt-3">
+                  <div class="description-car">
+                    <img src="./image/Gas.svg" alt="Gasoline">
+                    80L
+                  </div>
+                  <div class="description-car">
+                    <img src="./image/typeCar.svg" alt="typeCar">
+                    Manual
+                  </div>
+                  <div class="description-car">
+                    <img src="./image/people.svg" alt="people">
+                    6 People
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between mb-2">
+                  <div>
+                    <h1 class="costs">$74.00/
+                      <span class="pt-2 days">days</span>
+                    </h1>
+                  </div>
+                  <button type="button" class="btn btn-primary button-size">Rent Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- slider-mobile -->
+          <div class="slider-mobile">
+            <div class="d-flex justify-content-between mt-4">
+              <p class="text-secondary fw-bold">Recent Car</p>
+              <button type="button" class="btn btn-light text-primary fw-bold">View All</button>
+            </div>
+
+            <div
+              id="carouselExampleSlidesOnly"
+              class="carousel slide mt-3"
+              data-bs-ride="carousel"
+              data-bs-touch="true"
+              data-interval="10000"
+              data-pause="hover"
+            >
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="card mx-auto p-4 border-0">
+                    <div class="d-flex justify-content-between">
+                      <p class="car-brand">Koenigsegg</p>
+                      <img src="./image/like.svg" alt="like">
+                    </div>
+                    <p class="car-type mt-2 text-secondary">Sport</p>
+                    <img
+                      class="card-img-top mt-4"
+                      src="./image/Koenigsegg.svg"
+                      alt="Card image cap"
+                    >
+                    <div class="card-body d-flex justify-content-between mt-3">
+                      <div class="description-car">
+                        <img src="./image/Gas.svg" alt="Gasoline">
+                        90L
+                      </div>
+                      <div class="description-car">
+                        <img src="./image/typeCar.svg" alt="typeCar">
+                        Manual
+                      </div>
+                      <div class="description-car">
+                        <img src="./image/people.svg" alt="people">
+                        2 People
+                      </div>
+                    </div>
+                    <div class="d-flex justify-content-between mb-2">
+                      <div>
+                        <h1 class="costs mt-2">$99.00/
+                          <span class="pt-2 days">days</span>
+                        </h1>
+                      </div>
+                      <button type="button" class="btn btn-primary button-size">Rent Now</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="card mx-auto p-4 border-0">
+                    <div class="d-flex justify-content-between">
+                      <p class="car-brand">Nissan GT - R</p>
+                      <img src="./image/emptyLike.svg" alt="like">
+                    </div>
+                    <p class="car-type mt-2 text-secondary">Sport</p>
+                    <img
+                      class="card-img-top mt-4"
+                      src="./image/Nissan GTR.svg"
+                      alt="Card image cap"
+                    >
+                    <div class="card-body d-flex justify-content-between mt-3">
+                      <div class="description-car">
+                        <img src="./image/Gas.svg" alt="Gasoline">
+                        80L
+                      </div>
+                      <div class="description-car">
+                        <img src="./image/typeCar.svg" alt="typeCar">
+                        Manual
+                      </div>
+                      <div class="description-car">
+                        <img src="./image/people.svg" alt="people">
+                        2 People
+                      </div>
+                    </div>
+                    <div class="d-flex justify-content-between mb-2">
+                      <div>
+                        <h1 class="costs mt-2">$80.00/
+                          <span class="pt-2 days">days</span>
+                        </h1>
+                        <p class="discount">$100.00</p>
+                      </div>
+                      <button type="button" class="btn btn-primary button-size">Rent Now</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="card mx-auto p-4 border-0">
+                    <div class="d-flex justify-content-between">
+                      <p class="car-brand">Rolls-Royce</p>
+                      <img src="./image/like.svg" alt="like">
+                    </div>
+                    <p class="car-type mt-2 text-secondary">Sport</p>
+                    <img class="card-img-top mt-4" src="./image/Rolls-Royce.svg" alt="Card image cap">
+                    <div class="card-body d-flex justify-content-between mt-3">
+                      <div class="description-car">
+                        <img src="./image/Gas.svg" alt="Gasoline">
+                      70L
+                      </div>
+                      <div class="description-car">
+                        <img src="./image/typeCar.svg" alt="typeCar">
+                      Manual
+                      </div>
+                      <div class="description-car">
+                        <img src="./image/people.svg" alt="people">
+                      2 People
+                      </div>
+                    </div>
+                    <div class="d-flex justify-content-between mb-2">
+                      <div>
+                        <h1 class="costs mt-2">$96.00/
+                          <span class="pt-2 days">days</span>
+                        </h1>
+                      </div>
+                      <button type="button" class="btn btn-primary button-size">Rent Now</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="d-flex justify-content-between mt-4">
+              <p class="text-secondary fw-bold">Recomendation Car</p>
+              <button type="button" class="btn btn-light text-primary fw-bold">View All</button>
+            </div>
+
+            <div
+              id="carouselExampleSlidesOnly"
+              class="carousel slide mt-3"
+              data-bs-ride="carousel"
+              data-bs-touch="true"
+              data-interval="10000"
+              data-pause="hover"
+          >
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="card mx-auto p-4 border-0">
+                    <div class="d-flex justify-content-between">
+                      <p class="car-brand">All New Rush</p>
+                      <img src="./image/emptyLike.svg" alt="like">
+                    </div>
+                    <p class="car-type mt-2 text-secondary">Sport</p>
+                    <img
+                      class="card-img-top mt-4"
+                      src="./image/All New Rush.svg"
+                      alt="Card image cap"
+                    >
+                    <div class="card-body d-flex justify-content-between mt-3">
+                      <div class="description-car">
+                        <img src="./image/Gas.svg" alt="Gasoline">
+                        70L
+                      </div>
+                      <div class="description-car">
+                        <img src="./image/typeCar.svg" alt="typeCar">
+                        Manual
+                      </div>
+                      <div class="description-car">
+                        <img src="./image/people.svg" alt="people">
+                        6 People
+                      </div>
+                    </div>
+                    <div class="d-flex justify-content-between mb-2">
+                      <div>
+                        <h1 class="costs mt-2">$72.00/
+                          <span class="pt-2 days">days</span>
+                        </h1>
+                        <p class="discount">$80.00</p>
+                      </div>
+                      <button type="button" class="btn btn-primary button-size">Rent Now</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="card mx-auto p-4 border-0">
+                    <div class="d-flex justify-content-between">
+                      <p class="car-brand">CR - V</p>
+                      <img src="./image/like.svg" alt="like">
+                    </div>
+                    <p class="car-type mt-2 text-secondary">Sport</p>
+                    <img
+                      class="card-img-top mt-4"
+                      src="./image/CR - V.svg"
+                      alt="Card image cap"
+                    >
+                    <div class="card-body d-flex justify-content-between mt-3">
+                      <div class="description-car">
+                        <img src="./image/Gas.svg" alt="Gasoline">
+                        80L
+                      </div>
+                      <div class="description-car">
+                        <img src="./image/typeCar.svg" alt="typeCar">
+                        Manual
+                      </div>
+                      <div class="description-car">
+                        <img src="./image/people.svg" alt="people">
+                        6 People
+                      </div>
+                    </div>
+                    <div class="d-flex justify-content-between mb-2">
+                      <div>
+                        <h1 class="costs mt-2">$80.00/
+                          <span class="pt-2 days">days</span>
+                        </h1>
+                      </div>
+                      <button type="button" class="btn btn-primary button-size">Rent Now</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="card mx-auto p-4 border-0">
+                    <div class="d-flex justify-content-between">
+                      <p class="car-brand">All New Terios</p>
+                      <img src="./image/emptyLike.svg" alt="like">
+                    </div>
+                    <p class="car-type mt-2 text-secondary">Sport</p>
+                    <img
+                      class="card-img-top mt-4"
+                      src="./image/All New Terios.svg"
+                      alt="Card image cap"
+                    >
+                    <div class="card-body d-flex justify-content-between mt-3">
+                      <div class="description-car">
+                        <img src="./image/Gas.svg" alt="Gasoline">
+                        90L
+                      </div>
+                      <div class="description-car">
+                        <img src="./image/typeCar.svg" alt="typeCar">
+                        Manual
+                      </div>
+                      <div class="description-car">
+                        <img src="./image/people.svg" alt="people">
+                        6 People
+                      </div>
+                    </div>
+                    <div class="d-flex justify-content-between mb-2">
+                      <div>
+                        <h1 class="costs mt-2">$74.00/
+                          <span class="pt-2 days">days</span>
+                        </h1>
+                      </div>
+                      <button type="button" class="btn btn-primary button-size">Rent Now</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer class="footer bg-white">
+      <div class="footer-block justify-content-between">
+        <div>
+          <img
+            class="logo"
+            src="./image/logo.svg"
+            alt="logo"
+          >
+          <p class="footer__logoText">Our vision is to provide convenience and help increase your sales business.</p>
+        </div>
+        <div class="d-flex justify content-between flex-wrap mt-3">
+          <div class="footer__about">
+            <h1 class="footer__title">About</h1>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a class="link" href="#">How it works</a>
+              </li>
+              <li class="footer__item">
+                <a class="link" href="#">Featured</a>
+              </li>
+              <li class="footer__item">
+                <a class="link" href="#">Partnership</a>
+              </li>
+              <li class="footer__item">
+                <a class="link" href="#">Bussiness Relation</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__social">
+            <h1 class="footer__title">Socials</h1>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a class="link" href="#">Discord</a>
+              </li>
+              <li class="footer__item">
+                <a class="link" href="#">Instagram</a>
+              </li>
+              <li class="footer__item">
+                <a class="link" href="#">Twitter</a>
+              </li>
+              <li class="footer__item">
+                <a class="link" href="#">Facebook</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__community">
+            <h1 class="footer__title">Community</h1>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a class="link" href="#">Events</a>
+              </li>
+              <li class="footer__item">
+                <a class="link" href="#">Blog</a>
+              </li>
+              <li class="footer__item">
+                <a class="link" href="#">Podcast</a>
+              </li>
+              <li class="footer__item">
+                <a class="link" href="#">Invite a friend</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="line"></div>
+
+      <div class="bottom-block">
+        <div class="privacy-info">
+          <a class="privacy-info__link" href="#">Privacy & Policy</a>
+          <a class="privacy-info__link" href="#">Terms & Condition</a>
+        </div>
+        <p class="about">©2022 MORENT. All rights reserved</p>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    >
+    </script>
   </body>
 </html>

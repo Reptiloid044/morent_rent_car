@@ -1,0 +1,10 @@
+.header {
+  height: 222px;
+  width: 100%;
+  border: 1px solid #C3D4E966;
+
+  @include onDesktop {
+    height: 108px;
+  };
+};
+

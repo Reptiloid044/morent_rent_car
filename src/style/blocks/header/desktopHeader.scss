@@ -1,0 +1,54 @@
+.desktop {
+  display: none;
+
+  @include onDesktop {
+    display: block;
+  }
+}
+
+.navbar-menu {
+  position: relative;
+
+  &__form {
+    position: relative;
+    width: 492px;
+    margin-left: 64px;
+  }
+
+  &__input-search {
+    border: 1px solid rgba(195, 212, 233, 0.4);
+    border-radius: 70px;
+    padding-left: 64px;
+  }
+
+  &__icon {
+    box-sizing: border-box;
+    margin-right: 20px;
+    width: 44px;
+    height: 44px;
+    border: 1px solid rgba(195, 212, 233, 0.4);
+    border-radius: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__account {
+    justify-content: flex-end;
+  }
+}
+
+.search-image {
+  position: absolute;
+  display: block;
+  left: 30px;
+  top: 10px;
+}
+
+.filter-button {
+  position: absolute;
+  display: block;
+  left: 412px;
+}
+
+

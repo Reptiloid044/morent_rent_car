@@ -1,0 +1,11 @@
+@import './utils/reset.scss';
+@import './utils/mixins.scss';
+
+@import './blocks/header/header.scss';
+@import './blocks/header/desktopHeader.scss';
+@import './blocks/header/mobileHeader.scss';
+@import './blocks/sidebar/leftSidebar.scss';
+@import './blocks/main/top-section.scss';
+@import './blocks/main/reviews-section.scss';
+@import './blocks/main/cars-section.scss';
+@import './blocks/footer/footer.scss';
