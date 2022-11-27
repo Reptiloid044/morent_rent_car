@@ -1,5 +1,7 @@
 Hi there!
 
+This project was implemented in two sizes: mobile version (375px) and desktop version (1440px). In this project, you can meet the carousel (only on the mobile version) and progress-bar (only on the desktop version).
+
 MORENT CAR RENT LANDING:
 
 - [FIGMA](https://www.figma.com/file/uA7kRTj5367RW5JCChUc9z/Car-Rent-Website-Design---Pickolab-Studio-(Community)-(Copy)?node-id=1%3A6&t=3A0gLxAOIW4MKuQ7-0)
