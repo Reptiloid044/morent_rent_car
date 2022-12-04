@@ -1,5 +1,6 @@
 .mobile {
   display: block;
+  padding-bottom: 30px;
 
   @include onDesktop {
     display: none !important;
@@ -7,15 +8,15 @@
 
   &__brand {
     position: absolute;
-    top: 70px;
-    left: 30px
+    margin-top: 50px;
+    margin-left: 20px
   }
 
   &__form {
     position: relative;
-    top: 85px;
+    top: 20px;
     margin: 0 auto;
-    width: 100%;
+    width: 95%;
   }
 
   &__input-search {

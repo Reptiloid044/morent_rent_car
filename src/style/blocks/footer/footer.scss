@@ -23,12 +23,22 @@
   &__about {
     width: 230px;
 
+    @include onTablet {
+      width: 250px;
+    }
+
     @include onDesktop {
       width: 200px;
     }
   }
 
   &__social {
+
+    @include onTablet {
+      margin-top: 0;
+      width: 250px;
+    }
+
     @include onDesktop {
       margin-top: 0;
       width: 200px;
@@ -38,8 +48,12 @@
   &__community {
     margin-top: 20px;
 
-    @include onDesktop {
+    @include onTablet {
       margin-top: 0;
+      width: 200px;
+    }
+
+    @include onDesktop {
       width: 200px;
     }
   }
@@ -71,6 +85,12 @@
 
 .line {
   display: none;
+
+  @include onTablet {
+    display: block;
+    margin-top: 60px;
+    border-bottom: 1px solid grey;
+  }
 
   @include onDesktop {
     display: block;

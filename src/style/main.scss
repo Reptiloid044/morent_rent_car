@@ -2,10 +2,16 @@
 @import './utils/mixins.scss';
 
 @import './blocks/header/header.scss';
-@import './blocks/header/desktopHeader.scss';
-@import './blocks/header/mobileHeader.scss';
-@import './blocks/sidebar/leftSidebar.scss';
-@import './blocks/main/top-section.scss';
-@import './blocks/main/reviews-section.scss';
-@import './blocks/main/cars-section.scss';
+@import './blocks/desktop-header/desktop-header.scss';
+@import './blocks/slider/slider.scss';
+@import './blocks/mobile-header/mobile-header.scss';
+@import './blocks/left-sidebar/left-sidebar.scss';
+@import './blocks/top-section/top-section.scss';
+@import './blocks/reviews-section/reviews-section.scss';
+@import './blocks/cars-section/cars-section.scss';
 @import './blocks/footer/footer.scss';
+
+.page__body {
+  max-width: 1540px;
+  margin: 0 auto;
+}

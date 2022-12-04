@@ -1,6 +1,12 @@
 .cards-desktop {
   display: none;
 
+  @include onTablet {
+    margin: 0 auto;
+    display: block;
+    width: 600px;
+  }
+
   @include onDesktop {
     display: block;
     width: 1016px;
@@ -9,6 +15,10 @@
 
 .slider-mobile {
   display: block;
+
+  @include onTablet {
+    display: none;
+  }
 
   @include onDesktop {
     display: none;
@@ -19,10 +29,22 @@
   width: 300px;
   height: 350px;
 
+  @include onTablet {
+    width: 190px;
+    height: 280px;
+    padding: 16px;
+  }
+
   @include onDesktop {
     width: 317px;
     height: 388px;
     padding: 24px;
+  }
+
+  &__heart {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
   }
 }
 

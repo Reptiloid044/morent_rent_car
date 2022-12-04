@@ -1,6 +1,6 @@
 Hi there!
 
-This project was implemented in two sizes: mobile version (375px) and desktop version (1440px). In this project, you can meet the carousel (only on the mobile version) and progress-bar (only on the desktop version).
+This project was implemented in two sizes: mobile version (375px), tablet version (768px) and desktop version (1440px). In this project, you can meet the carousel (only on the mobile version) and progress-bar (only on the desktop version).
 
 MORENT CAR RENT LANDING:
 
