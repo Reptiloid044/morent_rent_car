@@ -34,6 +34,3 @@ TECHNOLOGIES:
 - CSS
 - SCSS
 - Bootstrap
-
-
-
